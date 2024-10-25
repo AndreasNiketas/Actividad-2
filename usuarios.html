@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios BeaFree</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="IconBeafreePng" href="IconBeafreePng.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"> <!-- Aquí está el enlace a la página inicial -->
+                <img src="LogoBeafreePng - copia.png" class="logo" alt="">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <h1>Usuarios Registrados</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cédula</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+                <!-- Aquí se listarán los usuarios -->
+            </tbody>
+        </table>
+        <button onclick="mostrarUsuarios()">Listar Usuarios</button>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BeaFree. Todos los derechos reservados.</p>
+            <p>Desarrollado por Emmanuel David Morales De La Hoz y Andres Pabuena Castro</p>
+            <div class="social-links">
+                <a href="https://x.com/Moratroste" target="_blank">
+                    <img src="SocialMedia/x.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/emmanueldavid.moralesdelahoz" target="_blank">
+                    <img src="SocialMedia/facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/emonuelx" target="_blank">
+                    <img src="SocialMedia/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

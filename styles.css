@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #000217,#000217,#d9cfcf, #000000,#000000); /* Degradado de arriba a abajo */
+}
+
+.letras {
+    color: white;
+}
+
+.highlight {
+    color: white;
+    padding-left: 20px;
+    padding-top: 35px;
+    display: flex; /* Mantiene el diseño en línea */
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.LogoHighlight {
+    display: flex;
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+.LogoHighlight img {
+    width: 120px; /* Ajusta el ancho según tu preferencia */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 5px; /* Espacio opcional entre el logo y el texto */
+}
+
+.TextHighlight {
+    display: flex;
+    flex-direction: column; /* Para que el título y el párrafo estén uno encima del otro */
+}
+
+/* Reduce el tamaño del texto */
+.TextHighlight h1 {
+    font-size: 24px; /* Ajusta según tu preferencia */
+    margin: 0; /* Elimina margen por defecto */
+    text-align: start;
+}
+
+.TextHighlight p {
+    font-size: 14px; /* Ajusta el tamaño del párrafo */
+    margin: 0; /* Elimina margen por defecto */
+    text-align: start;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Controlar el ancho máximo de la página */
+    margin: 0 auto;
+    padding: 0 20px; /* Espaciado horizontal */
+}
+
+.navbar {
+    background-color: #000217;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center;
+}
+
+.navbar .nav-links {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Eliminar puntos de la lista */
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none; /* Eliminar subrayado */
+    padding: 10px 15px; /* Espacio alrededor del texto */
+}
+
+.navbar img {
+    width: 70px; /* Ancho fijo para la imagen del navbar */
+}
+
+.main-content {
+    padding-top: 20px;
+    padding-left: 120px; /* Ajustar espaciado izquierdo */
+    padding-right: 120px; /* Ajustar espaciado derecho */
+    text-align: center; /* Centrar texto */
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; 
+    position: relative;
+    flex: 1;
+    margin-top: 100px; 
+}
+
+.social-links {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos */
+    justify-content: center; /* Centra los íconos */
+}
+
+.social-icon {
+    width: 20px; /* Ancho uniforme para todos los íconos */
+    height: 20px; /* Alto uniforme para todos los íconos */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    transition: transform 0.2s; /* Efecto de transición para hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en varias filas */
+    justify-content: center; /* Centrar tarjetas en el contenedor */
+    margin: 20px 0; /* Margen vertical */
+    padding: 0 10px; /* Padding horizontal */
+    max-width: 100%; /* Ancho completo */
+}
+
+.card {
+    width: calc(20% - 20px); /* 5 tarjetas por fila */
+    background-color: #000217;
+    border: 1px solid #fafbff; /* Borde de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px; /* Margen entre tarjetas */
+    padding: 15px; /* Padding interno */
+    display: flex;
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Alinear elementos al centro */
+    text-align: center; /* Centrar texto */
+    color: white; /* Color del texto */
+}
+
+.card img {
+    width: 100%; /* Ancho completo de la imagen */
+    max-width: 170px; /* Ancho máximo para imágenes */
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+    border: 1px solid #fafbff;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+    border-radius: 5px; /* Redondea ligeramente las esquinas */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+table {
+    width: 100%; /* Ocupa el ancho completo */
+    border-collapse: collapse; /* Colapsa los bordes */
+    margin-top: 20px; /* Añade espacio superior */
+    color: #fff; /* Texto en blanco */
+    background-color: #524a4a; /* Fondo gris claro */
+    overflow-x: auto;
+}
+
+th, td {
+    border: 1px solid #fafbff; 
+    text-align: center;
+    padding: 8px; 
+   
+}
+
+th {
+    background-color: #333; /* Fondo para encabezados */
+}
+
+button {
+    background-color: #000217; /* Fondo oscuro */
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555; /* Cambia el fondo al pasar el cursor */
+}
+
+.main-content h1 {
+    color: #fafbff; /* Ajusta el color que prefieras */
+    font-weight: bold; /* Negrita opcional */
+    text-shadow: 1px 1px 2px #333; /* Sombra opcional para mejorar la legibilidad */
+}
+
+.main-content label {
+    color: #fafbff; /* Cambia este valor por el color que prefieras */
+    font-weight: bold; /* Opcional: resaltar el texto */
+    margin-bottom: 5px;
+    display: block; /* Asegura que cada etiqueta esté en su propia línea */
+}
+
+
+
+/* Media Queries para ajustes responsivos */
+@media (min-width: 1200px) {
+    .card {
+        width: calc(20% - 20px); /* 5 tarjetas por fila */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        width: calc(33.33% - 20px); /* 3 tarjetas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 35px;
+        padding-right: 35px; 
+    }
+    .card {
+        width: calc(50% - 20px); /* 2 tarjetas por fila */
+    }
+    .footer {
+        padding: 15px 0;
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* 1 tarjeta por fila */
+    }
+    .footer{
+        font-size: 15px;
+    }
+}
